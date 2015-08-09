@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="top"-->
+        <!--android:orientation="vertical">-->
+             <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--&lt;!&ndash; **** Place Your Content Here **** &ndash;&gt;-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="3dp"-->
+                <!--android:background="@drawable/toolbar_dropshadow" />-->
+        <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/swipe_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/background_image"
+            android:layout_height="130dp"/>
+
+        <red.yelo.widgets.slidingtabs.SlidingTabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_huge"
+            android:background="@color/white" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+/>
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_wheel"
+        android:layout_width="50dp"
+        android:visibility="invisible"
+        android:layout_height="50dp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="right"
+        android:visibility="visible"
+        android:layout_marginRight="@dimen/margin_large"
+        android:src="@drawable/floating_group_states"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_medium"
+        >
+        <com.vinaysshenoy.okulus.OkulusImageView
+            app:okulus_fullCircle="true"
+            android:id="@+id/profile_image"
+            app:okulus_borderColor="@color/white"
+            app:okulus_borderWidth="1dp"
+            style="@style/Avatar.Big"/>
+        <red.yelo.widgets.TypefacedTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_xxx_small"
+            android:id="@+id/user_name"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:text="Anshul Kamboj"
+            style="@style/ActionBar.TitleTextStyle.Profile"/>
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_alignParentTop="true"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.Yelo.OverlayActionBar.Popup"
+        app:theme="@style/Theme.Yelo.OverlayActionBar"
+        app:titleTextAppearance="@style/ActionBar.TitleTextStyle.Profile" />
+
+</FrameLayout>

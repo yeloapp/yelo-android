@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<resources>
+
+    <style name="Yelo" />
+
+    <style name="Yelo.Text" />
+    <!-- Display 4 -->
+
+    <style name="Yelo.Text.Display4" parent="Yelo.Text">
+        <item name="fontStyle">light</item>
+        <item name="android:textSize">112sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="Yelo.Text.Display4.Italic" parent="Yelo.Text.Display4">
+        <item name="fontStyle">lightItalic</item>
+    </style>
+
+    <style name="Yelo.Text.Display4.Inverse" parent="Yelo.Text.Display4">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Display4.Italic.Inverse" parent="Yelo.Text.Display4.Italic">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <!-- Display 3-->
+    <style name="Yelo.Text.Display3" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="Yelo.Text.Display3.Italic" parent="Yelo.Text.Display3">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.Display3.Inverse" parent="Yelo.Text.Display3">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Display3.Italic.Inverse" parent="Yelo.Text.Display3.Italic">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <!-- Display 2 -->
+    <style name="Yelo.Text.Display2" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="Yelo.Text.Display2.Italic" parent="Yelo.Text.Display2">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.Display2.Inverse" parent="Yelo.Text.Display2">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Display2.Italic.Inverse" parent="Yelo.Text.Display2.Italic">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <!-- Display 1 -->
+    <style name="Yelo.Text.Display1" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="Yelo.Text.Display1.Italic" parent="Yelo.Text.Display1">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.Display1.Inverse" parent="Yelo.Text.Display1">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Display1.Italic.Inverse" parent="Yelo.Text.Display1.Italic">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <!-- Headline -->
+    <style name="Yelo.Text.Headline" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Yelo.Text.Headline.Italic" parent="Yelo.Text.Headline">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.Headline.Inverse" parent="Yelo.Text.Headline">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Headline.Italic.Inverse" parent="Yelo.Text.Headline.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <!-- Title -->
+    <style name="Yelo.Text.Title" parent="Yelo.Text">
+        <item name="fontStyle">medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Yelo.Text.Post_message" parent="Yelo.Text">
+        <item name="fontStyle">light</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+
+    <style name="Yelo.Text.Title.Italic" parent="Yelo.Text.Title">
+        <item name="fontStyle">mediumItalic</item>
+    </style>
+
+    <style name="Yelo.Text.Title.Inverse" parent="Yelo.Text.Title">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Title.Italic.Inverse" parent="Yelo.Text.Title.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <!-- Subhead -->
+    <style name="Yelo.Text.Subhead" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Yelo.Text.Subhead.Italic" parent="Yelo.Text.Subhead">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.Subhead.Inverse" parent="Yelo.Text.Subhead">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Subhead.Italic.Inverse" parent="Yelo.Text.Subhead.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <!-- Body 2 -->
+    <style name="Yelo.Text.Body2" parent="Yelo.Text">
+        <item name="fontStyle">medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Yelo.Text.Body2.Italic" parent="Yelo.Text.Body2">
+        <item name="fontStyle">mediumItalic</item>
+    </style>
+
+    <style name="Yelo.Text.Body2.Inverse" parent="Yelo.Text.Body2">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Body2.Italic.Inverse" parent="Yelo.Text.Body2.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <!-- Body 1 -->
+    <style name="Yelo.Text.Body1" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <!-- Body 1 -->
+    <style name="Yelo.Text.EDIT" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue_text</item>
+    </style>
+
+    <style name="Yelo.Text.PostWall" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+
+
+    <style name="Yelo.Text.Body1.Italic" parent="Yelo.Text.Body1">
+        <item name="fontStyle">italic</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+
+    </style>
+
+    <style name="Yelo.Text.Body1.Inverse" parent="Yelo.Text.Body1">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+
+    </style>
+
+    <style name="Yelo.Text.Body1.Italic.Inverse" parent="Yelo.Text.Body1.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <!-- Caption -->
+    <style name="Yelo.Text.Caption" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <!-- Caption -->
+    <style name="Yelo.Text.LocationWhite" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+
+    <!-- Tag -->
+    <style name="Yelo.Text.Tag" parent="Yelo.Text">
+        <item name="fontStyle">slabBold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/selector_tag</item>
+        <item name="android:background">@drawable/tag_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Yelo.Text.Tag.Inverse" parent="Yelo.Text.Tag">
+        <item name="android:textColor">@color/selector_tag_inverse</item>
+        <item name="android:background">@drawable/tag_background_inverse</item>
+    </style>
+
+
+    <style name="Yelo.Text.Caption.Italic" parent="Yelo.Text.Caption">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.Caption.Inverse" parent="Yelo.Text.Caption">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Caption.Italic.Inverse" parent="Yelo.Text.Caption.Italic">
+        <item name="android:textColor">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <!-- Menu -->
+    <style name="Yelo.Text.Menu" parent="Yelo.Text">
+        <item name="fontStyle">medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Yelo.Text.Menu.Italic" parent="Yelo.Text.Menu">
+        <item name="fontStyle">mediumItalic</item>
+    </style>
+
+    <style name="Yelo.Text.Menu.Inverse" parent="Yelo.Text.Menu">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Menu.Italic.Inverse" parent="Yelo.Text.Menu.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <!-- Button -->
+    <style name="Yelo.Text.Button" parent="Yelo.Text">
+        <item name="fontStyle">medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/ripple_primary_bg</item>
+        <item name="android:colorControlHighlight">@color/accentColor</item>
+        <item name="android:colorControlNormal">@color/accentColor</item>
+        <item name="android:paddingTop">@dimen/button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/button_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/button_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/button_horizontal_padding</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Yelo.Text.Button.Italic" parent="Yelo.Text.Button">
+        <item name="fontStyle">mediumItalic</item>
+    </style>
+
+
+    <style name="Yelo.Text.Button.LoginButton" parent="Yelo.Text.Button">
+        <item name="android:background">@drawable/ripple_primary_bg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Yelo.Text.Button.Inverse" parent="Yelo.Text.Button">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.Button.Italic.Inverse" parent="Yelo.Text.Button.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.ActionBar.TabText" parent="Yelo.Text">
+        <item name="fontStyle">medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/selector_tab_text</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Yelo.Text.ActionBar.TabTextProfile" parent="Yelo.Text">
+        <item name="fontStyle">medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ActionBar.TitleTextStyle.Chat" parent="Yelo.Text">
+        <item name="android:textColor">@color/dark_yelo</item>
+        <item name="android:textSize">22sp</item>
+        <item name="fontStyle">medium</item>
+
+    </style>
+
+    <style name="ActionBar.TitleTextStyle.ChatUserName" parent="Yelo.Text">
+        <item name="android:textColor">@color/dark_yelo</item>
+        <item name="android:textSize">16.5sp</item>
+        <item name="fontStyle">medium</item>
+    </style>
+
+    <style name="ActionBar.TitleTextStyle.Card" parent="Yelo.Text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="fontStyle">medium</item>
+
+    </style>
+
+
+    <style name="ActionBar.TitleTextStyle.Profile" parent="Yelo.Text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="fontStyle">medium</item>
+
+    </style>
+
+
+
+
+    <style name="Yelo.Text.UserName" parent="Yelo.Text">
+        <item name="fontStyle">medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Yelo.Text.Header" parent="Yelo.Text">
+        <item name="fontStyle">lightItalic</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+
+    <!-- Edit Text Styles -->
+    <style name="Yelo.Text.EditText" parent="Yelo.Text">
+        <item name="fontStyle">regular</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Small" parent="Yelo.Text.EditText">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Small.Inverse" parent="Yelo.Text.EditText.Small">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Small.Italic" parent="Yelo.Text.EditText.Small">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Small.Italic.Inverse" parent="Yelo.Text.EditText.Small.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Normal" parent="Yelo.Text.EditText">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Number" parent="Yelo.Text.EditText">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+
+    <style name="Yelo.Text.EditText.Normal.Inverse" parent="Yelo.Text.EditText.Normal">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Normal.Italic" parent="Yelo.Text.EditText.Normal">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Normal.Number" parent="Yelo.Text.EditText.Number">
+        <item name="fontStyle">light</item>
+    </style>
+
+
+    <style name="Yelo.Text.EditText.Normal.Italic.Inverse" parent="Yelo.Text.EditText.Normal.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Large" parent="Yelo.Text.EditText">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Large.Inverse" parent="Yelo.Text.EditText.Large">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Large.Italic" parent="Yelo.Text.EditText.Large">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Large.Italic.Inverse" parent="Yelo.Text.EditText.Large.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Huge" parent="Yelo.Text.EditText">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Huge.Inverse" parent="Yelo.Text.EditText.Huge">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Huge.Italic" parent="Yelo.Text.EditText.Huge">
+        <item name="fontStyle">italic</item>
+    </style>
+
+    <style name="Yelo.Text.EditText.Huge.Italic.Inverse" parent="Yelo.Text.EditText.Huge.Italic">
+        <item name="android:textColor">@color/textColorPrimaryInverse</item>
+    </style>
+</resources>

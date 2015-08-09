@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Notification settings for chat messages -->
+    <PreferenceCategory android:title="@string/chat_notifications">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:icon="@null"
+            android:key="@string/pref_enable_chat_notifications"
+            android:title="@string/enabled" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_enable_chat_notifications"
+            android:icon="@null"
+            android:key="@string/pref_enable_chat_vibrate"
+            android:title="@string/vibrate" />
+
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="@string/pref_enable_chat_notifications"
+            android:icon="@null"
+            android:key="@string/pref_chat_ringtone"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="@string/ringtone" />
+
+    </PreferenceCategory>
+
+    <!-- Notification settings for others -->
+    <PreferenceCategory android:title="@string/other_notifications">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:icon="@null"
+            android:key="@string/pref_enable_other_notifications"
+            android:title="@string/enabled" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_enable_other_notifications"
+            android:icon="@null"
+            android:key="@string/pref_enable_other_vibrate"
+            android:title="@string/vibrate" />
+
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="@string/pref_enable_other_notifications"
+            android:icon="@null"
+            android:key="@string/pref_other_ringtone"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="@string/ringtone" />
+    </PreferenceCategory>
+
+    <!--&lt;!&ndash; Location settings for Feed &ndash;&gt;-->
+    <!--<PreferenceCategory android:title="@string/location_feed">-->
+
+        <!--<ListPreference-->
+            <!--android:dialogTitle="Select city"-->
+            <!--android:entries="@array/location_cities"-->
+            <!--android:entryValues="@array/location_cities"-->
+            <!--android:icon="@null"-->
+            <!--android:key="@string/pref_location_settings"-->
+            <!--android:title="@string/select_city" />-->
+
+    <!--</PreferenceCategory>-->
+
+
+</PreferenceScreen>

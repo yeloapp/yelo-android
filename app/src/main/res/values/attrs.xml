@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<resources>
+
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="drawable" format="integer" />
+        <attr name="floatingButtonColor" format="color" />
+        <attr name="shadowRadius" format="float" />
+        <attr name="shadowDx" format="float" />
+        <attr name="shadowDy" format="float" />
+        <attr name="shadowColor" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CollapseOnScrollView">
+        <attr name="stayVisibleId" format="reference" />
+        <attr name="expandOnDragId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PullToRefreshView">
+
+        <!-- The class to use as a View's View Delegate. Can be relative path from app's package name -->
+        <attr name="ptrViewDelegateClass" format="reference|string" />
+    </declare-styleable>
+
+    <attr name="fontStyle" format="enum">
+        <enum name="regular" value="0" />
+        <enum name="light" value="1" />
+        <enum name="medium" value="2" />
+        <enum name="italic" value="3" />
+        <enum name="lightItalic" value="4" />
+        <enum name="mediumItalic" value="5" />
+        <enum name="slabBold" value="6" />
+        <enum name="openSansBold" value="7" />
+        <enum name="bebasBold" value="8" />
+    </attr>
+
+    <declare-styleable name="SwipeClearLayout">
+        <attr name="circleTopMargin" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="duration" format="integer"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="progressIndeterminate" format="boolean" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="float" />
+        <attr name="barSpinCycleTime" format="integer" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="fillRadius" format="boolean" />
+        <attr name="barWidth" format="dimension" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="TypefacedTextView">
+        <attr name="fontStyle" />
+    </declare-styleable>
+    <declare-styleable name="TypefacedButton">
+        <attr name="fontStyle" />
+    </declare-styleable>
+    <declare-styleable name="TypefacedAutoCompleteTextView">
+        <attr name="fontStyle" />
+    </declare-styleable>
+    <declare-styleable name="TypefacedEditText">
+        <attr name="fontStyle" />
+    </declare-styleable>
+    <declare-styleable name="TypefacedCheckBox">
+        <attr name="fontStyle" />
+    </declare-styleable>
+
+
+</resources>

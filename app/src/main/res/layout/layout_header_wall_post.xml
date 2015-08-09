@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:transitionName="wall"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/wall_image"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/wall_image_height"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="87.5dp"
+            android:id="@+id/gradient_view"
+            android:background="@drawable/gradient"/>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_layout"
+        android:layout_marginBottom="@dimen/margin_xx_small">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_head_bar"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_x_small"
+            android:orientation="horizontal">
+        <red.yelo.widgets.TypefacedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Yelo.Text.RobotoRegularXSmall_lightgrey"
+            android:id="@+id/group_name"/>
+
+            <red.yelo.widgets.TypefacedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Yelo.Text.RobotoRegularXSmall_lightgrey"
+                android:id="@+id/subcategory_name"/>
+        </LinearLayout>
+        <com.vinaysshenoy.okulus.OkulusImageView
+            android:id="@+id/image_user"
+            style="@style/Avatar.Normal"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_x_small"
+            android:contentDescription="@string/app_name"
+            android:layout_below="@+id/layout_head_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:okulus_borderWidth="@dimen/user_image_border2"
+            app:okulus_borderColor="@color/white"
+            app:okulus_touchSelectorEnabled="true"
+            app:okulus_fullCircle="true"/>
+
+        <red.yelo.widgets.TypefacedTextView
+            style="@style/Yelo.Text.RobotoMediumSmall_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_user_name"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_xx_small"
+            android:layout_toRightOf="@id/image_user"
+            android:layout_toEndOf="@id/image_user"
+            android:layout_alignTop="@id/image_user"
+            android:layout_marginTop="@dimen/margin_xx_small"/>
+
+
+        <red.yelo.widgets.TypefacedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_time"
+            android:visibility="gone"
+            android:layout_alignLeft="@id/text_user_name"
+            android:layout_alignStart="@id/text_user_name"
+            android:layout_marginTop="@dimen/margin_xxx_small"
+            android:layout_below="@id/text_user_name"
+            style="@style/Yelo.Text.RobotoRegularXSmall_lightgrey"/>
+
+        <red.yelo.widgets.TypefacedTextView
+            android:id="@+id/text_location"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xxx_small"
+            android:layout_toRightOf="@+id/post_time"
+            android:layout_below="@id/text_user_name"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            style="@style/Yelo.Text.RobotoRegularXSmall_lightgrey"/>
+
+
+    </RelativeLayout>
+
+    <red.yelo.widgets.TypefacedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xx_small"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:id="@+id/text_post_message"
+        android:ellipsize="end"
+        style="@style/Yelo.Text.RobotoRegularSmall_default"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:visibility="gone"
+        android:background="@drawable/selector_click"
+        android:id="@+id/ask_friends_layout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/avatar_small"
+            android:layout_height="@dimen/avatar_small"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="21dp"
+            android:src="@drawable/ic_editor_insert_emoticon"/>
+
+        <red.yelo.widgets.TypefacedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask friends for referrals via free SMS"
+            android:layout_gravity="center_vertical"
+            style="@style/Yelo.Text.RobotoRegularSmall_lightgrey"/>
+
+
+        </LinearLayout>
+
+
+
+    <red.yelo.widgets.TypefacedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connect_count"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_x_small"
+        style="@style/Yelo.Text.RobotoRegularXSmall_grey"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_x_small"
+        android:layout_height=".3dp"
+        android:background="@color/snow_primary"/>
+</LinearLayout>
+

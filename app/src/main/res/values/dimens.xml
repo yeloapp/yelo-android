@@ -1,0 +1,135 @@
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="ab_height">48dp</dimen>
+    <dimen name="margin_xxxx_small">1dp</dimen>
+    <dimen name="margin_xxx_small">2dp</dimen>
+    <dimen name="margin_xx_small">4dp</dimen>
+    <dimen name="margin_x_small">8dp</dimen>
+    <dimen name="margin_minimum">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_tag_spinner">28dp</dimen>
+    <dimen name="margin_huge">32dp</dimen>
+    <dimen name="bar_height">48dp</dimen>
+    <dimen name="wall_image_height">175dp</dimen>
+    <dimen name="user_post_top_margin">233dp</dimen>
+    <dimen name="post_on_wall_grid_height">100dp</dimen>
+
+    <dimen name="card_spacing">4dp</dimen>
+
+
+    <dimen name="margin_top_login_hint">40dp</dimen>
+
+    <dimen name="imagefeature_width">150dp</dimen>
+    <dimen name="imagefeature_height">50dp</dimen>
+
+    <dimen name="service_card_image_height">150dp</dimen>
+
+    <dimen name="auto_suggest_textview_height">50dp</dimen>
+    <dimen name="suggestion_list_height">80dp</dimen>
+    <dimen name="suggestion_taglist_height">60dp</dimen>
+
+
+
+    <dimen name="category_list_height">60dp</dimen>
+    <dimen name="services_list_height">72dp</dimen>
+    <dimen name="my_services_list_height">50dp</dimen>
+
+    <dimen name="tags_grid_height">48dp</dimen>
+    <dimen name="createlisting_tags_grid_height">145dp</dimen>
+
+    <dimen name="chat_image_corner_radius">25dp</dimen>
+
+    <dimen name="my_listing_card_height">180dp</dimen>
+
+    <dimen name="button_vertical_padding">12dp</dimen>
+    <dimen name="button_horizontal_padding">12dp</dimen>
+    <dimen name="nav_drawer_width">300dp</dimen>
+
+    <dimen name="profile_header_height">60dp</dimen>
+
+    <dimen name="profile_header_img_size">48dp</dimen>
+
+
+    <dimen name="user_image_size_profile">72dp</dimen>
+    <dimen name="user_image_radius_profile">36dp</dimen>
+
+    <dimen name="image_container_height">100dp</dimen>
+
+
+    <dimen name="login_user_image_border">3dp</dimen>
+    <dimen name="login_user_image_size_profile">256dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_micromicro">10sp</dimen>
+    <dimen name="text_micro">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_big">20sp</dimen>
+    <dimen name="text_large">22sp</dimen>
+    <dimen name="text_x_large">24sp</dimen>
+    <dimen name="text_xx_large">28sp</dimen>
+    <dimen name="text_xxx_large">56sp</dimen>
+
+    <dimen name="wall_username_size">14sp</dimen>
+
+    <dimen name="query_edittext_above_margin">80dp</dimen>
+
+
+    <dimen name="chats_item_height">72dp</dimen>
+    <dimen name="chat_detail_image_size">50dp</dimen>
+    <dimen name="chat_detail_margin">48dp</dimen>
+    <dimen name="big_chat_image_radius">30dp</dimen>
+    <dimen name="user_image_border">2dp</dimen>
+    <dimen name="user_image_border2">0dp</dimen>
+    <dimen name="card_header_height">35dp</dimen>
+    <dimen name="taggedusers_image_width">24dp</dimen>
+    <dimen name="taggedusers_image_radius">12dp</dimen>
+    <dimen name="star_image_height">40dp</dimen>
+    <dimen name="star_image_width">40dp</dimen>
+    <dimen name="wall_card_height">200dp</dimen>
+
+
+    <dimen name="card_base_empty_height">40dp</dimen>
+
+    <dimen name="step_pager_tab_width">50dp</dimen>
+    <dimen name="step_pager_tab_height">3dp</dimen>
+    <dimen name="step_pager_tab_spacing">6dp</dimen>
+
+    <dimen name="button_corner_radius">3dp</dimen>
+    <dimen name="post_action_padding">12dp</dimen>
+
+    <dimen name="facebook_image_size">48dp</dimen>
+    <dimen name="google_image_size">56dp</dimen>
+
+    <dimen name="avatar_huge">128dp</dimen>
+    <dimen name="avatar_large">96dp</dimen>
+    <dimen name="avatar_big">64dp</dimen>
+    <dimen name="avatar_editprofile">160dp</dimen>
+    <dimen name="avatar_normal">48dp</dimen>
+    <dimen name="avatar_small">38dp</dimen>
+    <dimen name="avatar_tiny">24dp</dimen>
+
+    <!-- Dimens for tags -->
+    <dimen name="tag_stroke_width">1dp</dimen>
+    <dimen name="tag_radius">65dp</dimen>
+    <dimen name="tag_horizontal_padding">8dp</dimen>
+    <dimen name="tag_vertical_padding">3dp</dimen>
+
+</resources>

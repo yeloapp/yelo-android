@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<resources>
+
+    <string name="app_name">yelo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sample_text_chat">Lorem Epsum, Lorem epsum.. Lorem
+     Lorem Lorem. No epsum. Lorem. Epsum. Lorem. Common Epsum.
+     Goat. Hen. Shaun the sheep. Duck tales.</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help_and_support">Help</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_closed">drawer_closed</string>
+    <string name="enter_mobile_number">Mobile Number</string>
+    <string name="first_name">firstname</string>
+    <string name="last_name">lastname</string>
+    <string name="enter_your_query">enter your query</string>
+    <string name="query">Query</string>
+    <string name="broadcast">Broadcast</string>
+    <string name="cancel">Cancel</string>
+    <string name="chat">CHAT</string>
+    <string name="cancelCap">CANCEL</string>
+    <string name="query_message_hint">enter your query</string>
+    <string name="image_profile_pic_description">Profile Picture</string>
+    <string name="image_service_pic_description">Service Picture</string>
+    <string name="hint_first_name">Name</string>
+    <string name="hint_last_name">Last Name(optional)</string>
+    <string name="hint_desciption">About Me: My interests and skills</string>
+    <string name="hint_service_name">Service Name</string>
+    <string name="hint_service_desciption">Tell us something about yourself(140 characters).</string>
+    <string name="hint_city">city name</string>
+    <string name="enter_code_hint">Enter code received in SMS</string>
+    <string name="hint_country">state country</string>
+    <string name="hint_address">enter address</string>
+    <string name="query_tap_message">Press me to write Query</string>
+    <string name="hint_select_tags">Select hashTags. eg. #android</string>
+    <string name="create_listing_text">What\'s your</string>
+    <string name="create_listing_info">Select by clicking on your interests</string>
+    <string name="select_interest_info">You can follow other topics too, that you might be interested in or know a lot about.</string>
+    <string name="skipbutton">Skip</string>
+    <string name="createbutton">Create</string>
+    <string name="finish_button">Finish</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="update">Update</string>
+    <string name="title_pick_tags">Select a Tag</string>
+    <string name="no_network_message">Please check your network connection</string>
+    <string name="add">Add</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="tag_label">enter the tag</string>
+    <string name="submit">Submit</string>
+    <string name="new_messages">%d new messages!</string>
+    <string name="about_me">About me</string>
+    <string name="my_services">My Services</string>
+    <string name="contact_number_title">Contact Number</string>
+    <string name="description_title">Description</string>
+    <string name="ratings_title">Your Testimonial</string>
+    <string name="please_ratings_title">Please Rate</string>
+    <string name="select_category">Select category</string>
+    <string name="category">Category</string>
+    <string name="login_guide">login hint to be discussed what to write</string>
+    <string name="listing_title">My Avatars</string>
+    <string name="budget_title">select your budget</string>
+    <string name="preferred_location">Location</string>
+    <string name="attach_an_image">Attach an image</string>
+    <string name="select_category_toast">Please select the category</string>
+    <string name="category_already_created_toast">Category already created. You cannot create
+    different listing for same category</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="bug">Bug</string>
+    <string name="hint_feedback">Enter your findings here</string>
+    <string name="select_tags">Select tags</string>
+    <string name="select_looking_for_toast">Please select an option</string>
+    <string name="please_select_tags_message">Please select category for the post</string>
+    <string name="please_select_subcategory_message">Please select Subcategory for the post</string>
+    <string name="please_write_your_query">Please give the details</string>
+    <string name="no_phone_number_message">Post not allowed with a mobile number</string>
+    <string name="please_select_location">Please select location</string>
+    <string name="address_info">your avatar\'s workplace</string>
+    <string name="wall_post">Wall Post</string>
+    <string name="update_app">Update App</string>
+    <string name="tag_user">Tag User</string>
+    <string name="comments">Comments</string>
+    <string name="enter_comment">tag user and comment</string>
+    <string name="profile_validation_message">Please fill your details</string>
+    <string name="profile_image_validation_message">Please upload your profile pic</string>
+    <string name="zero_value">0</string>
+    <string name="block_user_message">user blocked</string>
+    <string name="block">Block</string>
+    <string name="your_address">Your Address</string>
+    <string name="tag">REFER</string>
+    <string name="refer">REFER</string>
+    <string name="tag_number">Tag (%s)</string>
+    <string name="chat_number">Chat (%s)</string>
+    <string name="share">Share</string>
+    <string name="edit_skill">Edit Interests</string>
+    <string name="share_via">Share via</string>
+    <string name="share_via_for_tag">Share via</string>
+    <string name="what_are_your">What are your</string>
+    <string name="interests">Interests?</string>
+    <string name="who_solved_your">Who solved your</string>
+    <string name="problem">Problem?</string>
+    <string name="select_your_location">Select your location</string>
+    <string name="select_your_posts">Search posts</string>
+    <string name="select_location">Select Location</string>
+    <string name="fetching_message">Fetching data…</string>
+    <string name="enter_phone_number">Please enter your phone number</string>
+    <string name="enter_country_code">Please enter your country code</string>
+    <string name="enter_valid_phone_number">Please enter a valid phone number</string>
+    <string name="sms_not_send">Sms could not send</string>
+    <string name="retro_error">Network Error</string>
+    <string name="api_error">Something went wrong... Please try again later</string>
+    <string name="start_chat">START CHAT</string>
+    <string name="tag_a_friend">Refer a contact. It\'s free!</string>
+    <string name="toast_select_tags">Please select tags</string>
+    <string name="toast_select_location">Please select location</string>
+    <string name="verify_manually">Verify</string>
+    <string name="send_sms">Verify by sms</string>
+    <string name="close">CLOSE</string>
+    <string name="closed">CLOSED</string>
+    <string name="query_update_message">Query Updated</string>
+    <string name="select">Select</string>
+    <string name="fetching_location">Getting your location…</string>
+    <string name="report">Post flagged as abuse</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="you_may_skip">You may skip</string>
+    <string name="you_cannot_tag_on_your_wall">You cannot tag yourself on your post</string>
+    <string name="generating_share_link">Building share link…</string>
+    <string name="share_message_format" formatted="false">%s\n\nDownload yelo to connect\n\n%s</string>
+    <string name="share_tag_message_format" formatted="false">Hey %s!\nI have referred you on yelo for a #%s post\n\n%s</string>
+    <string name="share_subject">Check this out</string>
+    <string name="share_tag_subject">You got yelo\'d</string>
+    <string name="select_post_location">Where do you want to post your query?</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="default_description">yelo! I am available here.</string>
+    <string name="book">Book</string>
+    <string name="book_button_message">By clicking book, a chat message will be sent to the user</string>
+    <string name="send_message">Send message</string>
+
+
+    <!-- guides ! -->
+    <string name="get_in_touch_with">Put me in touch\nwith</string>
+    <string name="price_rates_info">(Standard SMS rates apply)</string>
+
+    <!-- taginfo dialog strings! -->
+    <string name="tag_info_dialog_message">Your newly created tag will be approved shortly. Would you like to continue</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- empty view strings -->
+    <string name="chats_not_available"> No Chats\nStart chats from FEED</string>
+    <string name="notifications_not_available"> No New Notifications</string>
+    <string name="services_not_available"> No Services</string>
+
+    <string name="no_new_claims"> No New Claims</string>
+
+
+    <!-- menu strings -->
+    <string name="text_save">save</string>
+
+    <string-array name="take_photo_choices">
+        <item>Capture from Camera</item>
+        <item>Add from Gallery</item>
+        <item>Import from FACEBOOK</item>
+        <item>Import from GOOGLE</item>
+
+    </string-array>
+
+
+    <string-array name="take_photo_choices_wall">
+        <item>Capture from Camera</item>
+        <item>Add from Gallery</item>
+
+
+    </string-array>
+
+    <!-- query strings -->
+    <string name="broadcast_drag_message">Send A Broadcast Message</string>
+    <string name="looking_for">Looking For</string>
+    <string name="say_yelo">Just say yelo!</string>
+    <string name="looking_for_hiring">Hiring</string>
+    <string name="looking_for_advice">Advice</string>
+    <string name="looking_for_cofounders">Co-Founders</string>
+    <string name="looking_for_freelancers">Freelancers</string>
+    <string name="others">Others</string>
+    <string name="hey_yelo_message">yelo!</string>
+
+    <string-array name="login_switcher_array">
+        <item>Locals</item>
+        <item>Trainers</item>
+        <item>Entrepreneurs</item>
+        <item>Photographers</item>
+        <item>Developers</item>
+        <item>Designers</item>
+        <item>Handy Men</item>
+        <item>Dealers</item>
+        <item>Agents</item>
+        <item>Brokers</item>
+        <item>Professionals</item>
+
+    </string-array>
+    <string-array name="create_avatar_switcher_array">
+        <item>Interest</item>
+        <item>Passion</item>
+        <item>Talent</item>
+        <item>Skill</item>
+    </string-array>
+
+    <string-array name="time_spinner">
+        <item>Hours</item>
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+    </string-array>
+
+    <string name="time">Time</string>
+
+    <string-array name="helpmessage_array">
+        <item>Post queries to people around you</item>
+        <item>Chat directly with people on your post</item>
+        <item>Refer your contacts on posts</item>
+    </string-array>
+
+
+    <string-array name="budget_values_rent">
+        <item>Select Budget</item>
+        <item>upto 6k</item>
+        <item>6k - 12k</item>
+        <item>12k - 18k</item>
+        <item>18k - 24k</item>
+        <item>30k +</item>
+    </string-array>
+    <string-array name="budget_values_sale">
+        <item>Select Budget</item>
+        <item>upto 10 lacks</item>
+        <item>10 lakhs - 20 lakhs</item>
+        <item>20 lakhs - 40 lakhs</item>
+        <item>40 lakhs - 70 lakhs</item>
+        <item>70 lakhs +</item>
+    </string-array>
+
+    <string name="take_picture">Take picture</string>
+    <string name="complete_action_using">complete action using..</string>
+
+    <!-- Primary options for nav drawer -->
+    <string-array name="nav_drawer_primary">
+        <item>Logout   </item>
+    </string-array>
+
+    <!-- Secondary options for nav drawer -->
+    <string-array name="nav_drawer_secondary">
+        <item>EDIT PROFILE</item>
+        <item>SHARE THE APP</item>
+        <item>RATE US</item>
+        <item>SEND FEEDBACK</item>
+        <item>ABOUT US</item>
+    </string-array>
+    <string-array name="home_screen_titles">
+        <item>Discover</item>
+        <item>Ask</item>
+        <item>Chat</item>
+    </string-array>
+
+    <string-array name="profile_pager_titles">
+        <item>About</item>
+        <item>Referrals</item>
+        <item>Avatars</item>
+    </string-array>
+
+    <string-array name="post_start_sample">
+        <item>The more detail you add, the more likely you are to get good referrals.</item>
+        <item>The more detail you add, the more likely you are to get good referrals.</item>
+        <item>The more detail you add, the more likely you are to get good referrals.</item>
+        <item>The more detail you add, the more likely you are to get good referrals.</item>
+    </string-array>
+
+    <string-array name="search_services_titles">
+
+        <!-- <item>Query</item> -->
+        <item>All</item>
+        <item>Nearby</item>
+    </string-array>
+    <string-array name="chat_longclick_choices">
+        <item>Block</item>
+        <item>Delete</item>
+
+    </string-array>
+
+    <string-array name="chat_detail_longclick_choices">
+        <item>Resend</item>
+        <item>Copy</item>
+    </string-array>
+
+    <string-array name="chat_detail_longclick_choices_for_received">
+        <item>Copy</item>
+    </string-array>
+
+    <string-array name="tag_user_choices">
+        <item>Existing user</item>
+        <item>Invite user</item>
+    </string-array>
+
+    <!-- <string-array name="wall_owner_options_choices">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="wall_others_options_choices">
+        <item>Report abuse</item>
+        <item>Follow</item>
+    </string-array> -->
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="report_abuse">Report Abuse</string>
+    <string name="follow">Follow</string>
+    <string name="chat_longclick_dialog_head">Chat Options</string>
+    <string name="tag_click_dialog_head">Tag Options</string>
+    <string name="wall_options">Post Options</string>
+    <string name="delete_chat_alert_message">Are you sure you want to delete this chat?</string>
+    <string name="block_chat_alert_message">Are you sure you want to block this chat?</string>
+    <string name="delete_wall_alert_message">Are you sure you want to delete this wall post?</string>
+    <string name="delete_service_alert_message">Are you sure you want to delete this service card?</string>
+    <string name="close_wall_alert_message">Are you sure you want to close this wall post?</string>
+
+
+    <string-array name="listing_longclick_choices">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string name="listing_longclick_dialog_head">Listing Options</string>
+    <string name="delete_list_alert_message">Are you sure you want to delete this listing?</string>
+    <string name="title_activity_auth">Authentication</string>
+    <string name="title_activity_editprofile">Edit Profile</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_close">Close Post</string>
+    <string name="title_activity_addedit_listing">Select Interests</string>
+    <string name="title_activity_search_service">Search place</string>
+    <string name="title_activity_reviews">Reviews</string>
+    <string name="title_activity_select_tags">Select Tags</string>
+    <string name="title_activity_my_profile">Profile</string>
+    <string name="title_activity_chat_screen">Chat</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_wall_image">Wall Image</string>
+    <string name="title_notification_summary">Notifications</string>
+    <string name="title_edit_wall">Edit wall</string>
+    <string name="title_post_wall">Create a post</string>
+    <string name="title_expanded_view">Service card</string>
+    <string name="title_activity_ReferralList">Referral List</string>
+    <string name="title_activity_Search">Search Posts</string>
+    <string name="title_activity_RecommendationList">Recommendations</string>
+    <string name="title_ask_friends">Ask friends for free</string>
+    <string name="title_create_card">Create profile card</string>
+    <string name="title_activity_create_card">Create service card</string>
+    <string name="sending">…</string>
+    <string name="failed">Failed to send. Tap to retry.</string>
+    <string name="service_chat">Chat Service</string>
+    <string name="service_verify">Verify Service</string>
+    <string name="service_friend_finder">Friend Finder Service</string>
+    <string name="receiver_network">Receiver Network</string>
+    <string name="send">Send</string>
+    <string name="enter_message">Enter your message</string>
+    <string name="verifying_tag">...</string>
+    <string name="activate_tag">Go</string>
+    <string name="re_enter">Retry verification</string>
+
+
+    <!-- menu strings -->
+    <string name="action_search">search tags eg. android, iOS, UI, UX</string>
+    <string name="action_change_location">Change location</string>
+    <string name="action_search_places">Search location</string>
+    <string name="action_tag_friend">Search from your Address book</string>
+    <string name="action_search_tags">What are you looking for?</string>
+    <string name="action_profile">My profile</string>
+    <string name="action_edit_profile">Edit profile</string>
+    <string name="action_my_walls">My posts</string>
+    <string name="action_feedback">Send feedback</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_my_walls">My Posts</string>
+    <string name="hint_recommendation">Write a recommendation</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_post">Post</string>
+    <string name="seconds_message">%d seconds</string>
+    <string name="hint_interests">Development, UX, Android, iOS…</string>
+    <string name="hint_message">Put me in touch with \s</string>
+    <string name="done">Done</string>
+    <string name="fetch_info_from">Get profile pic from…</string>
+    <string name="or_add_manually">Or add manually</string>
+    <string name="referrals">Referrals\nReceived</string>
+    <string name="referrals_received">Referrals Received</string>
+    <string name="testimonials">%s Testimonials</string>
+    <string name="center_bullet"> · </string>
+
+
+    <string name="tagged">Referrals\nMade</string>
+    <string name="just_now">Just now</string>
+    <string name="seconds_ago">%ds ago</string>
+    <string name="minutes_ago">%dm ago</string>
+    <string name="hours_ago">%dh ago</string>
+    <string name="days_ago">%dd ago</string>
+    <string name="weeks_ago">%dw ago</string>
+    <string name="confirm">Confirm</string>
+    <string name="add_an_image">Add a photo</string>
+    <string name="update_image">Update photo</string>
+    <string name="title_activity_update_skills">UpdateSkillsActivity</string>
+    <string name="select_a_category">What does this query concern?(Optional)</string>
+    <string name="cannot_call_message">Only post owner has the call access</string>
+    <string name="cannot_chat_message">Only post owner has the chat access</string>
+    <string name="tag_format_exception_message">Number format exception.User cannot be tagged</string>
+    <!--<string name="bullet">&#8226;</string>-->
+    <string name="bullet">.</string>
+
+    <string name="chat_notifications">Chat Notifications</string>
+    <string name="other_notifications">Other Notifications</string>
+    <string name="location_feed">Location</string>
+    <string name="enabled">Enabled</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="person_name">Contact name</string>
+    <string name="toast_wall_not_present">Wall is deleted or not present</string>
+    <string name="select_city">Select City</string>
+    <string name="action_create">Create</string>
+    <string-array name="location_cities">
+        <item>Bangalore</item>
+    </string-array>
+    <string-array name="location_cities_values">
+        <item>1</item>
+    </string-array>
+
+
+    //tutorial
+    <string name="refer_tutorial_message">Recommend your phonebook contacts.</string>
+    <string name="post_tutorial_message">Ask community for local referrals.</string>
+    <string name="search_hint">search</string>
+
+
+    <string name="select_category_first">Select category first</string>
+
+
+    <string name="bangalore_latitude">12.9667</string>
+    <string name="bangalore_longitude">77.5667</string>
+
+    <string-array name="city_names">
+        <item>Bangalore</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>San Francisco</item>
+    </string-array>
+
+
+
+    <string-array name="city_latitudes">
+        <item>12.9667</item>
+        <item>28.6100</item>
+        <item>18.9750</item>
+        <item>37.7833</item>
+    </string-array>
+
+    <string-array name="city_longitudes">
+        <item>77.5667</item>
+        <item>77.2300</item>
+        <item>72.8258</item>
+        <item>-122.4167</item>
+    </string-array>
+
+
+    <string name="copyright_string">By using yelo, you agree to the
+    &lt;a href="http://www.yelo.red/termsofservice.html">Terms&lt;/a> and &lt;a href="http://www.yelo.red/privacy.html">Privacy Policy&lt;/a></string>
+
+    <!-- Added by Sharath -->
+    <string name="title_edit_post">Edit</string>
+    <string name="menu_title_edit_post">Edit Post</string>
+
+    <string name="title_edit_service">Edit</string>
+    <string name="menu_title_edit_service">Edit Service</string>
+
+    <!-- Rewards Page -->
+    <string name="menu_title_rewards">Share</string>
+    <string name="menu_title_leaders">Leaderboard</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="title_activity_rewards">Rewards</string>
+    <string name="title_activity_claims">Claims</string>
+    <string name="title_activity_leaderboard">Leaderboard</string>
+    <string name="text_rewards_description" formatted="false">Earn \u20B9%d per friend that joins.\nMinimum \u20B9%d balance to claim.</string>
+    <string name="button_invite">Invite</string>
+    <string name="button_claim">Claim</string>
+    <string name="footer_line_leaderboard">Refer professionals and contacts to the yelo community to be on our global leaderboard</string>
+
+    <string-array name="about_me_pager_screen_titles">
+        <item>Me</item>
+        <item>My Cards</item>
+    </string-array>
+    <string name="title_activity_service_cards">Services</string>
+    <string name="menu_title_me">My Profile</string>
+
+    <string name="search_service">I am looking for ...</string>
+
+    <string name="service_confirmation_message">You will hear from us in 24 hours.</string>
+    <string name="service_confirm_dialog_title">Card under review</string>
+    <string name="share_service_card">Checkout this service card on yelo android app \n-http://bit.ly/yelooo</string>
+    <string name="share_profile">Checkout this profile on yelo android app \n-http://bit.ly/yelooo</string>
+
+
+</resources>

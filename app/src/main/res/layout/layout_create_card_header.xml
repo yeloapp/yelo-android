@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin_large"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:id="@+id/category_frame_layout"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/selector_click"
+            >
+            <red.yelo.widgets.TypefacedTextView
+                android:id="@+id/goc_category_name"
+                android:padding="@dimen/margin_xxx_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                style="@style/Yelo.Text.RobotoRegularSmall_default"
+                android:text="Subcategory"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/ic_action_navigation_arrow_drop_down_grey"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginRight="100dp"
+            android:layout_height=".5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_cards"/>
+    </FrameLayout>
+
+    <red.yelo.widgets.autocomplete.NetworkedAutoCompleteTextView
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_x_small"
+        android:layout_width="match_parent"
+        android:id="@+id/keywords"
+        android:layout_height="wrap_content"
+        android:hint="Keywords"
+        style="@style/Yelo.Text.RobotoRegularSmall_default"
+        app:met_floatingLabel="normal" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_x_small"
+        android:layout_width="match_parent"
+        android:id="@+id/url"
+        android:layout_height="wrap_content"
+        style="@style/Yelo.Text.RobotoRegularSmall_default"
+        android:hint="Website Link (optional)"
+        app:met_floatingLabel="normal" />
+
+
+    <red.yelo.widgets.TypefacedTextView
+        android:padding="@dimen/margin_xxx_small"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:id="@+id/referrals"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        style="@style/Yelo.Text.RobotoRegularSmall_default"
+        android:text="Referrals"/>
+
+</LinearLayout>

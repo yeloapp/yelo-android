@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.Yelo.OverlayActionBar.Popup"
+        app:theme="@style/Theme.Yelo.OverlayActionBar"
+        app:titleTextAppearance="@style/ActionBar.TitleTextStyle.Chat"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_suggest_textview_height"
+        android:orientation="horizontal"
+        android:id="@+id/searchlayout"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/margin_x_small"
+            android:layout_marginRight="@dimen/margin_x_small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_action_search"
+            android:contentDescription="@string/app_name" />
+
+        <red.yelo.widgets.TypefacedEditText
+            android:gravity="center_vertical"
+            android:hint="@string/action_tag_friend"
+            android:id="@+id/tag_user"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            style="@style/Yelo.Text.EditText.Normal" />
+    </LinearLayout>
+
+
+
+    <red.yelo.widgets.TypefacedEditText
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_margin"
+        android:id="@+id/tag_user_name"
+        android:visibility="gone"
+        android:hint="@string/person_name"
+        android:layout_below="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Yelo.Text.EditText.Normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_recommendsend"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_xx_small"
+        android:paddingRight="@dimen/margin_xx_small"
+        android:paddingEnd="@dimen/margin_xx_small"
+        android:paddingStart="@dimen/margin_xx_small">
+
+        <red.yelo.widgets.TypefacedEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="false"
+            android:hint="@string/hint_recommendation"
+            android:id="@+id/recommendation" />
+
+        <red.yelo.widgets.TypefacedButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_button_send"
+            style="@style/Yelo.Text.Button.Inverse"
+            android:id="@+id/done_button" />
+    </LinearLayout>
+
+
+    <!--<ListView-->
+        <!--android:id="@+id/list_contacts"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:cacheColorHint="@color/transparent"-->
+        <!--android:layout_below="@id/tag_user_name"-->
+        <!--android:layout_above="@id/divider"-->
+        <!--android:choiceMode="singleChoice"-->
+        <!--android:divider="@null" />-->
+
+    <dev.dworks.libs.astickyheader.ui.PinnedSectionListView
+        android:id="@+id/list_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:layout_marginTop="3dp"
+        android:cacheColorHint="@color/transparent"
+        android:choiceMode="multipleChoice"
+        android:drawSelectorOnTop="true"
+        android:divider="@null"
+        android:focusable="false"
+        android:scrollbarStyle="outsideOverlay" />
+
+</RelativeLayout>

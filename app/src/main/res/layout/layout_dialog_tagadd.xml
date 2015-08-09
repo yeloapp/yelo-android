@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.vinaysshenoy.okulus.OkulusImageView
+            android:id="@+id/image_contact"
+            style="@style/Avatar.Normal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_x_small"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="false"
+            app:okulus_borderWidth="@dimen/user_image_border2"
+            app:okulus_borderColor="@color/white"
+            app:okulus_fullCircle="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/margin_x_small"
+            android:orientation="vertical">
+
+            <red.yelo.widgets.TypefacedTextView
+                android:id="@+id/contact_name"
+                style="@style/Yelo.Text.ContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:visibility="visible"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Anshul Kamboj"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <red.yelo.widgets.TypefacedEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anshul Kamboj"
+                android:visibility="gone"
+                android:id="@+id/edit_contact_text"/>
+
+            <red.yelo.widgets.TypefacedTextView
+                android:id="@+id/contact_number"
+                style="@style/Yelo.Text.ContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="9996240151"
+                android:textColor="@color/dark_gray" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_user"
+            android:src="@drawable/ic_ic_action_edit"/>
+    </LinearLayout>
+
+
+    <red.yelo.widgets.TypefacedEditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_height="wrap_content"
+        android:id="@+id/recommendation_text"
+        android:hint="@string/hint_recommendation"/>
+
+
+</LinearLayout>
+
+

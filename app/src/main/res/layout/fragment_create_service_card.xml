@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snow_light">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="top"-->
+        <!--android:orientation="vertical">-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_awesome_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.Yelo.OverlayActionBar.Popup"
+            app:theme="@style/Theme.Yelo.OverlayActionBar.Card"
+            app:titleTextAppearance="@style/ActionBar.TitleTextStyle.Card" />
+        <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--&lt;!&ndash; **** Place Your Content Here **** &ndash;&gt;-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="3dp"-->
+        <!--android:background="@drawable/toolbar_dropshadow" />-->
+        <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/frame_goc"
+            android:transitionName="card"
+            android:background="@color/primaryColor">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="100dp"
+                android:clickable="true"
+                android:id="@+id/goc_layout"
+                android:background="@drawable/selector_click">
+                <red.yelo.widgets.TypefacedTextView
+                    android:id="@+id/goc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    style="@style/Yelo.Text.CollectionHeading"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:text="@string/category"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:id="@+id/spinner_icon"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:src="@drawable/ic_action_navigation_arrow_drop_down"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/attach_image_frame"
+                    android:layout_height="@dimen/service_card_image_height">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/service_card_image_height"
+                        android:id="@+id/image_background"
+                        android:background="@color/snow_darker" />
+
+                    <ImageView
+                        android:id="@+id/service_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/service_card_image_height"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/transparent"
+                        android:visibility="gone"
+                        android:contentDescription="@string/image_profile_pic_description"
+                        android:scaleType="centerCrop" />
+
+
+                    <ImageView
+                        android:id="@+id/gallery_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_image_photo" />
+
+                    <red.yelo.widgets.TypefacedTextView
+                        android:id="@+id/add_image_text"
+                        style="@style/Yelo.Text.RobotoRegularXSmall_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:text="ADD IMAGE" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:id="@+id/category_frame_layout"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="100dp"
+                        android:background="@drawable/selector_click"
+                        >
+                        <red.yelo.widgets.TypefacedTextView
+                            android:id="@+id/goc_category_name"
+                            android:padding="@dimen/margin_xxx_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            style="@style/Yelo.Text.RobotoRegularSmall_default"
+                            android:text="Subcategory"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@drawable/ic_action_navigation_arrow_drop_down_grey"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="100dp"
+                        android:layout_height=".5dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/gray_cards"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:orientation="vertical">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/title"
+                        style="@style/Yelo.Text.PostWall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_x_small"
+                        android:gravity="top"
+                        android:hint="Title"
+                        app:met_maxCharacters="40"
+                        android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="@color/blue_text" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/description"
+                        style="@style/Yelo.Text.PostWall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_x_small"
+                        android:gravity="top"
+                        android:hint="@string/description_title"
+                        android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="@color/blue_text" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:orientation="horizontal">
+
+                        <red.yelo.widgets.TypefacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/duration"
+                            android:text="Duration"
+                            style="@style/Yelo.Text.RobotoRegularSmall_default"
+                            android:textSize="16sp" />
+
+                        <red.yelo.widgets.TypefacedEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/duration_value_edit"
+                            android:hint="duration"
+                            android:inputType="number"
+                            android:maxWidth="100dp"
+                            style="@style/Yelo.Text.RobotoRegularSmall_default"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/duration_spinner"
+                            android:prompt="@string/time"
+                            android:entries="@array/time_spinner"
+                            style="@style/Yelo.Text.RobotoRegularSmall_default"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:orientation="horizontal">
+
+                        <red.yelo.widgets.TypefacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/cost"
+                            android:text="Cost"
+                            style="@style/Yelo.Text.RobotoRegularSmall_default"
+                            android:textSize="16sp" />
+
+                        <red.yelo.widgets.TypefacedEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/price"
+                            android:inputType="number"
+                            android:hint="cost in \u20B9"
+                            style="@style/Yelo.Text.RobotoRegularSmall_default"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@color/snow_dark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:orientation="vertical">
+
+                        <red.yelo.widgets.TypefacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/deliverables"
+                            android:text="Deliverables"
+                            style="@style/Yelo.Text.RobotoRegularSmall_default"
+                            android:textSize="16sp" />
+
+                        <red.yelo.widgets.TypefacedEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/deliverable_values"
+                            android:hint="What will you deliver?"
+                            style="@style/Yelo.Text.RobotoRegularSmall_default"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <red.yelo.widgets.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fabbutton"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="top|right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="70dp"
+        android:onClick="fabClicked"
+        android:transitionName="fab"
+        android:src="@drawable/ic_action_tick_white"
+        app:fab_colorNormal="@color/yelo_red"
+        app:fab_colorPressed="@color/yelo_red"
+        app:fab_colorRipple="@color/white"
+        app:fab_shadow="true" />
+
+
+</FrameLayout>

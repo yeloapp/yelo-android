@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="red.yelo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- For GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name=".permission.C2D_MESSAGE"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name=".linksgcm.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:name="red.yelo.YeloApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+
+            android:name="red.yelo.activities.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="x-application-rtwitter-oauth-twitter" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="linkedincallback"
+                    android:scheme="x-oauthflow-linkedin" />
+            </intent-filter>
+        </activity>
+
+        <activity
+
+            android:name="red.yelo.activities.HomePagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- Meta data for Google Play Services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Meta data for Facebook SDK -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name="com.facebook.LoginActivity" />
+        <activity
+            android:name="red.yelo.activities.CloseWallActivity"
+            android:label="@string/title_activity_close"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+        <activity
+            android:name="red.yelo.activities.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="red.yelo.activities.ChatsActivity"
+            android:label="@string/title_activity_chat_screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="red.yelo.activities.UserProfileActivity"
+            android:label="@string/title_activity_my_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+        <activity
+            android:name="red.yelo.activities.RegistrationProcessActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="red.yelo.activities.WallImageActivity"
+            android:label="@string/title_activity_wall_image"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name="red.yelo.activities.EditProfileActivity"
+            android:label="@string/about_me"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+        <activity
+            android:name="red.yelo.activities.ChatScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="red.yelo.activities.SearchLocationActivity"
+            android:label="@string/title_activity_search_service"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+        <activity
+            android:name="red.yelo.activities.NotificationSummaryActivity"
+            android:label="@string/title_notification_summary"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+        <activity
+            android:name="red.yelo.activities.EditWallPostActivity"
+            android:label="@string/title_edit_wall"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="red.yelo.activities.PostOnWallActivity"
+            android:label="@string/title_post_wall"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="red.yelo.activities.TagUserActivity"
+            android:label="@string/tag_a_friend"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="red.yelo.activities.SearchServicesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+
+        <activity
+            android:name="red.yelo.activities.WallPostActivity"
+            android:label="@string/wall_post"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar.WhiteOverflow"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="red.yelo.activities.SettingsActivity"
+            android:label="@string/action_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <activity
+            android:name="red.yelo.activities.UpdateScreenActivity"
+            android:label="@string/update_app"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="red.yelo.activities.ServiceCardExpandedActivity"
+            android:label="@string/title_activity_service_cards"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <!-- SMS receiver -->
+        <receiver android:name=".smsreceiver.IncomingSms">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Broadcast Receivers -->
+        <receiver
+            android:name="red.yelo.http.NetworkChangeReceiver"
+            android:exported="true"
+            android:label="@string/receiver_network">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Receiver for campaign tracking -->
+        <receiver
+            android:name="red.yelo.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Services -->
+        <service
+            android:name="red.yelo.chat.ChatService"
+            android:exported="false"
+            android:label="@string/service_chat" />
+        <service
+            android:name="red.yelo.verification.VerificationService"
+            android:exported="false"
+            android:label="@string/service_verify" />
+        <service
+            android:name="red.yelo.FriendFinderService"
+            android:exported="false"
+            android:label="@string/service_friend_finder" />
+
+        <receiver
+            android:name="red.yelo.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.google.android.gcm.demo.app" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="red.yelo.gcm.GcmIntentService" />
+        <service
+            android:name="red.yelo.http.WallPostIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name="red.yelo.activities.UpdateSkillsActivity"
+            android:label="@string/title_activity_update_skills"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <activity
+            android:name="red.yelo.activities.SearchWallActivity"
+            android:label="@string/title_activity_ReferralList"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="red.yelo.activities.AskFriendActivity"
+            android:label="@string/title_ask_friends"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <activity
+            android:name="red.yelo.activities.CreateCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <activity
+            android:name="red.yelo.activities.WallsViewActivity"
+            android:label="@string/title_activity_my_walls"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <activity
+            android:name="red.yelo.activities.RewardsActivity"
+            android:label="@string/title_activity_rewards"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <activity
+            android:name="red.yelo.activities.ClaimTableActivity"
+            android:label="@string/title_activity_claims"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <activity
+            android:name="red.yelo.activities.LeaderBoardActivity"
+            android:label="@string/title_activity_leaderboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <activity
+            android:name="red.yelo.activities.CreateServiceCardActivity"
+            android:label="@string/title_activity_create_card"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+        <activity
+            android:name="red.yelo.activities.ServiceCardsActivity"
+            android:label="@string/title_activity_service_cards"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.HomeNoActionBar" />
+
+
+        <!-- Declare the bundled CropImage Activity -->
+        <activity android:name="com.android.camera.CropImage"
+
+            />
+
+        <provider
+            android:name=".utils.InternalFileContentProvider"
+            tools:ignore="ExportedContentProvider"
+            android:authorities="${applicationId}"
+            android:enabled="true"
+            android:exported="true" />
+
+
+    </application>
+
+</manifest>

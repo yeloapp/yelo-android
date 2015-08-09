@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/postCardBackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification_layout"
+        android:orientation="vertical">
+
+        <red.yelo.widgets.TypefacedTextView
+            android:id="@+id/tag"
+            android:text="Tech"
+            android:background="@color/grey"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:padding="@dimen/margin_xxx_small"
+            android:layout_marginTop="@dimen/margin_x_small"
+            style="@style/Yelo.Text.CollectionHeading_Small"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium"
+            />
+
+        <red.yelo.widgets.TypefacedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_x_small"
+            android:layout_marginBottom="@dimen/margin_x_small"
+            android:layout_marginTop="@dimen/margin_x_small"
+            android:id="@+id/notification_message"
+            style="@style/Yelo.Text.Body1" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/snow_primary"/>
+
+    </LinearLayout>
+
+</FrameLayout>

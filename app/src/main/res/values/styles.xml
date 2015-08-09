@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="EditTextStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/textColorHint</item>
+    </style>
+
+    <style name="ActionBar.Solid.Yelo" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+
+    </style>
+
+    <style name="ActionBar.Solid.Yelo.White" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowWhite</item>
+
+    </style>
+
+    <style name="ActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/dark_yelo</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">fonts/Roboto-Light.ttf</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Toolbar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/dark_yelo</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="ActionBar.Solid.Yelo.Home" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/ActionBar.TitleTextStyle.Home</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+
+    </style>
+
+
+    <style name="ActionBar.Solid.Yelo.Home.White" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/ActionBar.TitleTextStyle.Home</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowWhite</item>
+
+    </style>
+
+    <style name="ActionBar.TitleTextStyle.Home" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <!-- POPUP -->
+
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+
+    <style name="TextAppearance.Yelo.FloatLabel" parent="android:TextAppearance.Small">
+        <item name="android:textColor">@color/dark_yelo</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="RatingBar" parent="AppTheme">
+        <item name="android:minHeight">30dip</item>
+        <item name="android:maxHeight">30dip</item>
+    </style>
+
+    <style name="Avatar.Huge" parent="AppTheme">
+        <item name="android:layout_width">@dimen/avatar_huge</item>
+        <item name="android:layout_height">@dimen/avatar_huge</item>
+    </style>
+
+    <style name="Avatar.Large" parent="AppTheme">
+        <item name="android:layout_width">@dimen/avatar_large</item>
+        <item name="android:layout_height">@dimen/avatar_large</item>
+    </style>
+
+    <style name="Avatar.Big" parent="AppTheme">
+        <item name="android:layout_width">@dimen/avatar_big</item>
+        <item name="android:layout_height">@dimen/avatar_big</item>
+    </style>
+
+    <style name="Avatar.EditProfile" parent="AppTheme">
+        <item name="android:layout_width">@dimen/avatar_editprofile</item>
+        <item name="android:layout_height">@dimen/avatar_editprofile</item>
+    </style>
+
+    <style name="Avatar.Normal" parent="AppTheme">
+        <item name="android:layout_width">@dimen/avatar_normal</item>
+        <item name="android:layout_height">@dimen/avatar_normal</item>
+        <item name="android:padding">@dimen/user_image_border</item>
+    </style>
+
+    <style name="Avatar.Small" parent="AppTheme">
+        <item name="android:layout_width">@dimen/avatar_small</item>
+        <item name="android:layout_height">@dimen/avatar_small</item>
+    </style>
+
+    <style name="Avatar.Tiny" parent="AppTheme">
+        <item name="android:layout_width">@dimen/avatar_tiny</item>
+        <item name="android:layout_height">@dimen/avatar_tiny</item>
+    </style>
+
+
+    <!--<style name="CustomShowcaseTheme" parent="ShowcaseView.Light">-->
+    <!--<item name="sv_backgroundColor">#99000000</item>-->
+    <!--<item name="sv_showcaseColor">@color/black</item>-->
+    <!--<item name="sv_buttonText">Hide</item>-->
+    <!--<item name="sv_tintButtonColor">false</item>-->
+    <!--<item name="sv_titleTextAppearance">@style/CustomTitle</item>-->
+    <!--</style>-->
+
+    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#D8000000</item>
+        <item name="sv_showcaseColor">@color/black</item>
+        <item name="sv_buttonText">Hide</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+        <item name="sv_detailTextAppearance">@style/CustomTitleDetail</item>
+
+    </style>
+
+
+    <style name="CustomTitleDetail" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">"sans-serif-light"</item>
+        <item name="android:textSize">22sp</item>
+
+
+    </style>
+
+    <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">22sp</item>
+
+    </style>
+
+
+    <!--<style name="FullHeightDialog" parent="@style/Theme.AppCompat.Light.Dialog">-->
+    <!--<item name="android:windowNoTitle">true</item>-->
+    <!--</style>-->
+
+</resources>

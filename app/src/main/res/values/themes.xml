@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Home" parent="@style/Theme.Yelo.Home">
+        <item name="android:icon">@drawable/ic_launcher</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/snow_dark</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="AppTheme.HomeNoActionBar" parent="@style/Theme.Yelo.HomeNoActionBar">
+        <item name="android:icon">@drawable/ic_launcher</item>
+        <item name="android:windowBackground">@color/snow_dark</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="AppTheme.HomeNoActionBar.WhiteOverflow" parent="@style/Theme.Yelo.HomeNoActionBar.WhiteOverFlow">
+        <item name="android:icon">@drawable/ic_launcher</item>
+        <item name="android:windowBackground">@color/snow_dark</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowWhite</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/Theme.Yelo">
+        <item name="android:icon">@drawable/ic_launcher</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/snow_dark</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+
+        <!--&lt;!&ndash; Close button icon &ndash;&gt;-->
+        <!--<item name="closeIcon">...</item>-->
+        <!-- Search button icon -->
+        <item name="searchIcon">@drawable/ic_action_search</item>
+        <item name="closeIcon">@drawable/ic_action_content_clear</item>
+    </style>
+
+
+    
+    <style name="Theme.Yelo" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/dark_yelo</item>
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/primaryColorDark</item>
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/dark_yelo</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Yelo</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_navigation_arrow_back</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="selectableItemBackground">@drawable/selector_click</item>
+
+        <!--&lt;!&ndash;-->
+            <!--Applies an icon to all dialogs.-->
+        <!--&ndash;&gt;-->
+        <!--<item name="md_dark_theme">false</item>-->
+
+        <!--&lt;!&ndash;-->
+            <!--By default, the title text is black or white based on the theme.-->
+        <!--&ndash;&gt;-->
+        <!--<item name="md_title_color">#E91E63</item>-->
+
+        <!--&lt;!&ndash;-->
+            <!--By default, the content text is derived from the-->
+            <!--?android:textColorSecondary OS attribute.-->
+        <!--&ndash;&gt;-->
+        <!--<item name="md_content_color">#9C27B0</item>-->
+
+        <!--&lt;!&ndash;-->
+            <!--By default, the accent color is derived from the colorAccent attribute of-->
+            <!--AppCompat or android:colorAccent attribute of the Material theme.-->
+        <!--&ndash;&gt;-->
+        <!--<item name="md_accent_color">#673AB7</item>-->
+
+        <!--&lt;!&ndash;-->
+            <!--By default, the list item text color is black for the light-->
+            <!--theme and white for the dark theme.-->
+        <!--&ndash;&gt;-->
+        <!--<item name="md_item_color">#9C27B0</item>-->
+
+        <!--&lt;!&ndash;-->
+            <!--This overrides the default dark or light dialog background color.-->
+            <!--Note that if you use a dark color here, you should set md_dark_theme to-->
+            <!--true so text and selectors look visible-->
+        <!--&ndash;&gt;-->
+        <!--<item name="md_background_color">#37474F</item>-->
+
+        <!--&lt;!&ndash;-->
+            <!--This overrides the color used for the top and bottom dividers used when-->
+            <!--content is scrollable-->
+        <!--&ndash;&gt;-->
+        <!--<item name="md_divider_color">#E91E63</item>-->
+    </style>
+
+
+
+
+    <style name="Theme.Yelo.Home" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/primaryColorDark</item>
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/accentColor</item>
+        <!--<item name="actionBarTabStyle">@style/ActionBarTabStyle.Yelo</item>-->
+        <!--<item name="actionBarItemBackground">@drawable/selectable_background_yelo</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Yelo</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Yelo</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Yelo</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Yelo</item>-->
+        <item name="actionBarStyle">@style/ActionBar.Solid.Yelo.Home</item>
+        <item name="selectableItemBackground">@drawable/selector_click</item>
+
+        <!--<item name="actionModeBackground">@drawable/cab_background_top_yelo</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_yelo</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Yelo</item>-->
+
+        <!--&lt;!&ndash; Light.DarkActionBar specific &ndash;&gt;
+        <item name="actionBarWidgetTheme">@style/Theme.Yelo.Widget</item>-->
+    </style>
+
+
+
+
+    <style name="Theme.Yelo.OverlayActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/dark_yelo</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/primaryColorDark</item>
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/dark_yelo</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Yelo.Home</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="selectableItemBackground">@drawable/selector_click</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/selector_click</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_navigation_arrow_back</item>
+    </style>
+
+    <style name="Theme.Yelo.OverlayActionBar.Card" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/dark_yelo</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/primaryColorDark</item>
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/dark_yelo</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Yelo.Home</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="selectableItemBackground">@drawable/selector_click</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/selector_click</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_navigation_arrow_back_white</item>
+    </style>
+
+    <style name="Theme.Yelo.OverlayActionBar.White" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/dark_yelo</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/primaryColorDark</item>
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/dark_yelo</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Yelo.Home</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlowWhite</item>
+        <item name="selectableItemBackground">@drawable/selector_click</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/selector_click</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_navigation_arrow_back</item>
+    </style>
+
+
+    <style name="Theme.Yelo.OverlayActionBar.Popup" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="selectableItemBackground">@drawable/selector_click</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/selector_click</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_navigation_arrow_back</item>
+
+
+        <!--<item name="actionBarTabStyle">@style/ActionBarTabStyle.Yelo</item>-->
+        <!--<item name="actionBarItemBackground">@drawable/selectable_background_yelo</item>
+
+        <item name="dropDownListViewStyle">@style/DropDownListView.Yelo</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Yelo</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Yelo</item>-->
+
+        <!--<item name="actionModeBackground">@drawable/cab_background_top_yelo</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_yelo</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Yelo</item>-->
+
+        <!--&lt;!&ndash;&lt;!&ndash; Light.DarkActionBar specific &ndash;&gt;-->
+        <!--<item name="actionBarWidgetTheme">@style/Theme.Yelo.Widget</item>&ndash;&gt;-->
+
+    </style>
+
+
+
+
+    <style name="Theme.Yelo.HomeNoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/primaryColorDark</item>
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/accentColor</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Yelo.Home</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="android:selectableItemBackground">@drawable/selector_click</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_navigation_arrow_back</item>
+    </style>
+
+
+    <style name="Theme.Yelo.HomeNoActionBar.WhiteOverFlow" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/primaryColorDark</item>
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/accentColor</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Yelo.Home.White</item>
+        <item name="android:selectableItemBackground">@drawable/selector_click</item>
+
+    </style>
+
+
+    <!-- Styles -->
+    <style name="OverFlow" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_navigation_more_vert</item>
+    </style>
+
+
+    <!-- Styles -->
+    <style name="OverFlowWhite" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_navigation_more_vert_white</item>
+    </style>
+
+
+</resources>

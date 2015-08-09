@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<resources>
+    <color name="global_bg">#f7f7f7</color>
+    <color name="transparent">#00000000</color>
+    <color name="overlay_black_15p">#26000000</color>
+    <color name="transparent_scrim">#40000000</color>
+    <color name="overlay_gray_40p">#66fbbf58</color>
+    <color name="overlay_yelochat">#d3ab00</color>
+    <color name="shadow">#D3D3D3</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_yelo">#604E00</color>
+    <color name="light_gray">#A4A4A4</color>
+    <color name="gray_cards">#BDBDBD</color>
+    <color name="light_gray2">#ececec</color>
+    <color name="dark_gray">#565051</color>
+    <color name="incoming_message">#FFFFFFFF</color>
+    <color name="outgoing_message">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="overlay_black_40p">#66000000</color>
+    <color name="category_background">#fff8e1</color>
+    <color name="theme_blue">#1FBCD2</color>
+    <color name="blue_text">#0E88F5</color>
+    <color name="coffee_color">#845730</color>
+
+    <color name="blue_link">#1F8DD6</color>
+    <color name="snow_dark">#dddddd</color>
+    <color name="snow_primary">#e8e8e8</color>
+    <color name="dark_light">#a3a3a3</color>
+    <color name="snow_light">#fafafa</color>
+    <color name="snow_darker">#c8c8c8</color>
+
+    <color name="add_button_color">#d94130</color>
+
+    <color name="review_green">#ff669900</color>
+
+    <color name="tag_text">#b9b9b9</color>
+    <color name="greyed_text">#a9a9a9</color>
+
+    <color name="text_light">#66000000</color>
+    <color name="tag_layout_color">#b9b9b9</color>
+
+    <color name="primaryColor">#FFCE00</color>
+    <color name="primaryColorLight">#fff5ca</color>
+    <color name="primaryColorDark">#cba500 </color>
+    <color name="accentColor">#0E88F5</color>
+    <color name="yelo_red">#d93c4d</color>
+    <color name="default_blue">#33b5e5</color>
+
+    <color name="loginUnpressedColor">#3cb878</color>
+    <color name="loginDisabledColor">#98d9b8</color>
+    <color name="loginPressedColor">#2f9460</color>
+
+
+    <!-- Colors for Wizard Pager -->
+    <color name="step_pager_previous_tab_color">@color/primaryColor</color>
+    <color name="step_pager_selected_tab_color">@color/primaryColorDark</color>
+    <color name="step_pager_selected_last_tab_color">@color/primaryColor</color>
+    <color name="step_pager_next_tab_color">#FF9E9E9E</color>
+
+    <color name="textColorPrimary">#DE000000</color>
+    <color name="textColorSecondary">#8A000000</color>
+    <color name="dateColorChat">#448d27</color>
+    <color name="textColorPrimaryInverse">#DEFFFFFF</color>
+    <color name="textColorSecondaryInverse">#8AFFFFFF</color>
+    <color name="textColorHint">#BDBDBD</color>
+
+    <color name="standardButtonColor">#FFBDBDBD</color>
+    <color name="doneButtonColor">#259b24</color>
+
+    <color name="postCardBackground">#ffffff</color>
+    <color name="serviceCardBackground">#ffffff</color>
+
+    <color name="profileCardBackground">#212d5e</color>
+
+    <!-- Tags Normal-->
+    <color name="tagDisabled">#A4A4A4</color>
+    <color name="tagNormal">#565051</color>
+    <color name="tagSelected">#FFCE00</color>
+    <color name="tagNormalPressed">#DE000000</color>
+    <color name="tagSelectedPressed">#ED9A2A</color>
+
+    <!-- Tags Inverse -->
+    <color name="tagDisabledInverse">#565051</color>
+    <color name="tagNormalInverse">#FFFFFFFF</color>
+    <color name="tagSelectedInverse">#ED9A2A</color>
+    <color name="tagNormalPressedInverse">#A4A4A4</color>
+    <color name="tagSelectedPressedInverse">#FFCE00</color>
+
+
+    <!-- Material Pallete for collections -->
+    <color name="blue">#1093f5</color>
+    <color name="orange">#ff9800</color>
+    <color name="magenta">#9d1ab2</color>
+    <color name="navyBlue">#6632b8</color>
+    <color name="grass">#009587</color>
+    <color name="materialRed">#eb1460</color>
+
+
+    <array name="collectionListColors">
+        <item>@color/blue</item>
+        <item>@color/orange</item>
+        <item>@color/magenta</item>
+        <item>@color/navyBlue</item>
+        <item>@color/grass</item>
+        <item>@color/materialRed</item>
+
+    </array>
+
+    <color name="grey">#757579</color>
+    <color name="light_grey">#a1a1a1</color>
+    <color name="text_default_dark">#282831</color>
+
+    <color name="disabled_green">#60c08f</color>
+
+
+</resources>

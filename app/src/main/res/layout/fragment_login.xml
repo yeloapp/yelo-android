@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /*
+  ~  * Copyright (C) 2015 yelo.red
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~  */
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <red.yelo.widgets.layout.LinearLayoutKeyboardHandler xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <red.yelo.widgets.TypefacedTextView
+            android:id="@+id/text_info"
+            style="@style/Yelo.Text.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_login_hint"
+            android:gravity="center"
+            android:text="@string/get_in_touch_with"
+            android:visibility="gone" />
+
+
+        <red.yelo.widgets.layout.LinearLayoutKeyboardHandler
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <red.yelo.widgets.slidingtabs.ViewPagerSmoothSlide
+                android:id="@+id/imagePager"
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                android:layout_below="@+id/header" />
+
+            <red.yelo.widgets.CirclePageIndicator
+                android:id="@+id/onBoardImageIndicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_xx_small"
+                app:fillColor="@color/greyed_text"
+                app:pageColor="@color/white"
+                app:radius="4dp"
+                app:strokeColor="@color/greyed_text" />
+        </red.yelo.widgets.layout.LinearLayoutKeyboardHandler>
+
+        <TextSwitcher
+            android:id="@+id/main_textswitcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animateFirstView="false"
+            android:inAnimation="@anim/push_up_in"
+            android:outAnimation="@anim/push_up_out"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/number_holder_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:orientation="horizontal">
+
+
+                <red.yelo.widgets.TypefacedEditText
+                    android:id="@+id/edit_countrycode"
+                    style="@style/Yelo.Text.EditText.Normal.Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:ems="2"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:text="91"
+                    android:visibility="visible" />
+
+
+                <red.yelo.widgets.TypefacedEditText
+                    android:id="@+id/edit_mobilenumber"
+                    style="@style/Yelo.Text.EditText.Normal.Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="@dimen/margin_x_small"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/enter_mobile_number"
+                    android:inputType="number"
+                    android:visibility="visible">
+
+                    <requestFocus />
+                </red.yelo.widgets.TypefacedEditText>
+
+                <red.yelo.widgets.TypefacedEditText
+                    android:id="@+id/enter_code_text"
+                    style="@style/Yelo.Text.EditText.Normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_x_small"
+                    android:layout_marginRight="@dimen/margin_x_small"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:hint="@string/enter_code_hint"
+                    android:inputType="number"
+                    android:visibility="gone" />
+
+                <red.yelo.widgets.TypefacedButton
+                    android:id="@+id/button_verify"
+                    style="@style/Yelo.Text.Button.LoginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/verify_manually"
+                    android:visibility="gone" />
+
+                <com.dd.CircularProgressButton
+                    android:id="@+id/button_activate"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:cpb_colorIndicator="@color/primaryColor"
+                    app:cpb_cornerRadius="30dp"
+                    app:cpb_selectorIdle="@drawable/login_button_selector"
+                    app:cpb_textComplete="Done"
+                    app:cpb_textError="error"
+                    app:cpb_textIdle="@string/activate_tag" />
+
+            </LinearLayout>
+
+
+            <red.yelo.widgets.TypefacedTextView
+                android:id="@+id/help_message"
+                style="@style/Yelo.Text.Caption.Italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/price_rates_info"
+                android:textColor="@color/dark_light"
+                android:visibility="gone" />
+
+            <red.yelo.widgets.TypefacedTextView
+                android:id="@+id/re_enter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/re_enter"
+                android:textColor="@color/blue_link"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/copyright_text"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="center_horizontal"
+                android:textColorLink="@color/blue_link"
+                android:gravity="center"
+                android:text="@string/copyright_string"
+                android:textSize="@dimen/text_micro"
+                android:linksClickable="true"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </red.yelo.widgets.layout.LinearLayoutKeyboardHandler>
+</ScrollView>
