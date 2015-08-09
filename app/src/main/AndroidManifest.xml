@@ -319,11 +319,6 @@
             android:theme="@style/AppTheme.HomeNoActionBar" />
 
 
-        <!-- Declare the bundled CropImage Activity -->
-        <activity android:name="com.android.camera.CropImage"
-
-            />
-
         <provider
             android:name=".utils.InternalFileContentProvider"
             tools:ignore="ExportedContentProvider"
