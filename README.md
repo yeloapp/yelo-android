@@ -50,6 +50,8 @@ ATTRIBUTIONS
 
 Copyright (C) 2014 yelo
 
+Please note that this is only licensing for the code and not the look and feel, brand and communication of yelo and its apps. The intent of this license is to enable you to make new things and not to produce a copy version.
+
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
 http://www.apache.org/licenses/LICENSE-2.0
